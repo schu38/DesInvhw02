@@ -1,0 +1,21 @@
+//part 1 
+function setup() {
+  createCanvas (340,340);
+}
+background(255);
+colorMode(HSB);
+strokeWeight(2);
+
+var Mondrian = 0;
+while (Mondrian < 200) {
+  var cats = random(0,255);
+  var dogs = random (0,255);
+  var birb = cats * 3;
+  fill (random (360), 255,255);
+	rect(random(0,340), random(0,340), random(0,170), random(0,170));
+  line (cats, birb, cats, dogs);
+  line (dogs, cats, birb, cats);
+	Mondrian = Mondrian + 2;
+}
+
+//part 2
