@@ -19,3 +19,16 @@ while (Mondrian < 200) {
 }
 
 //part 2
+var otherMondrian = 0;
+while (otherMondrian < 100) {
+  var cats = random(0,255);
+  var dogs = random (0,255);
+  var birb = cats * 3;
+  fill (random (360), 255,255);
+	rect(random(0,340), random(0,340), random(0,170), random(0,170));
+  line (random(),random(), random(), random());
+	ellipse (random(width), random(height), random(0,140));
+	otherMondrian = otherMondrian + 2;
+}
+
+
